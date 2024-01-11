@@ -1,0 +1,13 @@
+[
+    {
+        "id":"P01",
+        "nombre":"xxxxx",
+        "duracion":"xxxxx",
+        "sinopsis":"xxxxx",
+        "generos":["G01"],
+        "actores":["A01"],
+        "formato":["F01"]  
+    }
+ 
+]
+

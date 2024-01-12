@@ -1,4 +1,4 @@
-from read_json import *
+from commons.read_json import *
 
 def buscar_peliculas(entrada_busqueda):
     resultados = []

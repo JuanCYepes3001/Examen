@@ -1,7 +1,7 @@
-from read_json import *
-from w_json import *
-from menus import mod_pelicula
-from validaciones import validar_ids_existen
+from commons.read_json import *
+from commons.w_json import *
+from commons.menus import mod_pelicula
+from commons.validaciones import validar_ids_existen
 def modificarActor():
     if not lista_actores:
         print("No hay actores registrados.")
@@ -129,7 +129,7 @@ def modificar_pelicula():
                 if nuevo_valor:
                     ids_generos = [g.strip() for g in nuevo_valor.split(',')]
                     if validar_ids_existen(ids_generos, lista_generos):
-                        pelicula['generos'] = ids_generos
+                        pelicula['generos'] = [ids_generos]
                     else:
                         print("Error: Una o más IDs de géneros no existen.")
             elif op == 6:
@@ -137,7 +137,7 @@ def modificar_pelicula():
                 if nuevo_valor:
                     ids_actores = [a.strip() for a in nuevo_valor.split(',')]
                     if validar_ids_existen(ids_actores, lista_actores):
-                        pelicula['actores'] = ids_actores
+                        pelicula['actores'] = [ids_actores]
                     else:
                         print("Error: Una o más IDs de actores no existen.")
             elif op == 7:
@@ -145,7 +145,7 @@ def modificar_pelicula():
                 if nuevo_valor:
                     ids_formatos = [f.strip() for f in nuevo_valor.split(',')]
                     if validar_ids_existen(ids_formatos, lista_formatos):
-                        pelicula['formato'] = ids_formatos
+                        pelicula['formato'] = [ids_formatos]
                     else:
                         print("Error: Una o más IDs de formatos no existen.")
             else:

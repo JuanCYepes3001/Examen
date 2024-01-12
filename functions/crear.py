@@ -1,6 +1,6 @@
-from read_json import*
-from w_json import *
-from validaciones import validar_ids_existen
+from commons.read_json import*
+from commons.w_json import *
+from commons.validaciones import validar_ids_existen
 def crear_pelicula():
     nueva_pelicula = {}
 
@@ -45,7 +45,7 @@ def crear_actores():
     nuevo_actor['nombre'] = input("Ingrese el nombre del actor: ")
    
 
-    lista_peliculas.append(nuevo_actor)
+    lista_actores.append(nuevo_actor)
     print("Se creó el actor con éxito")
     guardar_actores()
 
@@ -58,7 +58,7 @@ def crear_formato():
     nuevo_formato['nombre'] = input("Ingrese el nombre del formato: ")
    
 
-    lista_peliculas.append(nuevo_formato)
+    lista_formatos.append(nuevo_formato)
     print("Se creó el formato con éxito")
     guardar_formatos()
 
@@ -71,6 +71,6 @@ def crear_genero():
     nuevo_genero['nombre'] = input("Ingrese el nombre del genero: ")
    
 
-    lista_peliculas.append(nuevo_genero)
+    lista_generos.append(nuevo_genero)
     print("Se creó el genero con éxito")
     guardar_generos()

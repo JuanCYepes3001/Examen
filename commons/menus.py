@@ -1,4 +1,4 @@
-from validaciones import validar_opcion 
+from commons.validaciones import validar_opcion 
 def menu_principal():
     print("----------- Menú Principal-----------")
     print("1. Ingresar informacion")
@@ -27,7 +27,24 @@ def menu_info():
     print("5. Salir")       
     op=validar_opcion("Opcion: ",1,5)
     return op
-
+def menu_info2():
+    print("-----------Eliminar informacion a-----------")
+    print("1. Eliminar actor")
+    print("2. Eliminar genero")
+    print("3. Eliminar pelicula")
+    print("4. Eliminar formato")
+    print("5. Salir")       
+    op=validar_opcion("Opcion: ",1,5)
+    return op
+def menu_info3():
+    print("-----------Editar informacion a-----------")
+    print("1. Editar actor")
+    print("2. Editar genero")
+    print("3. Editar pelicula")
+    print("4. Editar formato")
+    print("5. Salir")       
+    op=validar_opcion("Opcion: ",1,5)
+    return op
 def mod_pelicula():
     print("----------- Modificar pelicula-----------")
     print("Seleccione el dato que desea modificar")

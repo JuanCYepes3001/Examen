@@ -1,13 +1,56 @@
 [
-    {
-        "id":"P01",
-        "nombre":"xxxxx",
-        "duracion":"xxxxx",
-        "sinopsis":"xxxxx",
-        "generos":["G01"],
-        "actores":["A01"],
-        "formato":["F01"]  
-    }
- 
-]
+  {
+    "id": "P01",
+    "nombre": "xxxxx",
+    "duracion": "xxxxx",
+    "sinopsis": "xxxxx",
+    "generos": [
+      "G01"
+    ],
+    "actores": [
+      "A01"
+    ],
+    "formato": [
+      "F01"
+    ]
+  },
 
+  {
+    "id": "P03",
+    "nombre": "Coco",
+    "duracion": "145",
+    "sinopsis": "jnhbvcr",
+    "generos": "G01",
+    "actores": "A01",
+    "formato": "F01"
+  },
+
+  {
+    "id": "P04",
+    "nombre": "jhg",
+    "duracion": "656",
+    "sinopsis": "tyrter",
+    "generos": "G01",
+    "actores": "A01",
+    "formato": "F01"
+  },
+
+  {
+    "id": "65",
+    "nombre": "mjnhbgvf",
+    "duracion": "675",
+    "sinopsis": "uty",
+    "generos": "G01",
+    "actores": "A01",
+    "formato": "F01"
+  },
+  {
+    "id": "P05",
+    "nombre": "hg",
+    "duracion": "123",
+    "sinopsis": "ujthgff",
+    "generos": "G01",
+    "actores": "A01",
+    "formato": "F01"
+  }
+]

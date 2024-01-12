@@ -1,24 +1,24 @@
-from utils.validaciones import limpiar_pantalla
-from utils.menus import *
-from utils.crear import *
-from utils.eliminar import *
-from utils.buscar import *
-from utils.modificar import *
+from commons.validaciones import limpiar_pantalla
+from commons.menus import *
+from functions.crear import *
+from functions.eliminar import *
+from functions.buscar import *
+from functions.modificar import *
 def Ingresar():
     limpiar_pantalla()
     op=menu_info()
     if  op==1:
-        crear_actores
+        crear_actores()
     elif op==2:
-        crear_genero
+        crear_genero()
     elif op==3:
-        crear_pelicula
+        crear_pelicula()
     elif op==4:
-        crear_formato
+        crear_formato()
 
 def Eliminar():
     limpiar_pantalla()
-    op=menu_info()
+    op=menu_info2()
     if  op==1:
         eliminar_actor_por_id()
     elif op==2:
@@ -30,15 +30,15 @@ def Eliminar():
 
 def Editar():
     limpiar_pantalla()
-    op=menu_info()
+    op=menu_info3()
     if  op==1:
-        modificarActor
+        modificarActor()
     elif op==2:
-        modificarGenero
+        modificarGenero()
     elif op==3:
-        modificar_pelicula
+        modificar_pelicula()
     elif op==4:
-        modificarFormato
+        modificarFormato()
 def Buscar():
     limpiar_pantalla()
     buscar()

@@ -1,5 +1,5 @@
 import json
-from read_json import *
+from commons.read_json import *
 def guardar_peliculas():
     try:
       with open(os.path.join("data","peliculas.json"), 'w') as peliculas_json:
@@ -25,8 +25,8 @@ def guardar_actores():
         print("Error desconocido:")
 def guardar_formatos():
     try:
-      with open(os.path.join("data","formatos.json"), 'w') as actores_json:
-        json.dump(lista_formatos, actores_json, indent=2)
+      with open(os.path.join("data","formatos.json"), 'w') as formatos_json:
+        json.dump(lista_formatos, formatos_json, indent=2)
         print("La lista de campers ha sido guardada")
     except FileNotFoundError:
         print("El archivo no existe. Puede que aún no haya campers guardados.")
@@ -36,8 +36,8 @@ def guardar_formatos():
         print("Error desconocido:")
 def guardar_generos():
     try:
-      with open(os.path.join("data","actores.json"), 'w') as actores_json:
-        json.dump(lista_generos, actores_json, indent=2)
+      with open(os.path.join("data","generos.json"), 'w') as generos_json:
+        json.dump(lista_generos, generos_json, indent=2)
         print("La lista de campers ha sido guardada")
     except FileNotFoundError:
         print("El archivo no existe. Puede que aún no haya campers guardados.")
